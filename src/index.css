@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #0A2434;
+}
+
+body {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background-color: var(--main-color);
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 10%;
+}
