@@ -1,7 +1,7 @@
 // Importing React and other dependencies
 import "./index.css";
 import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from "nanoid";
 import Board from "./assets/components/Board"
 
 // Defining the Die type
@@ -27,7 +27,7 @@ function App() {
     return {
       value: Math.ceil(Math.random() * 6),
       held: false,
-      id: uuidv4(),
+      id: nanoid(10),
     };
   }
 
