@@ -1,4 +1,12 @@
-export default function Board({ diceElements, rollDice, tenzies }) {
+import React, { ReactElement } from "react";
+
+type BoardProps = {
+  diceElements: ReactElement[];
+  rollDice: () => void;
+  tenzies: boolean;
+};
+
+export default function Board({ diceElements, rollDice, tenzies }: BoardProps) {
   return (
     <section className="grid gap-y-2 bg-white rounded-lg text-center p-4">
       <h1>SKZ Tenzies</h1>
@@ -11,5 +19,5 @@ export default function Board({ diceElements, rollDice, tenzies }) {
 
       <button className="w-full py-2 bg-purple-500 hover:bg-purple-300 text-white hover:text-purple-500 font-bold text-2xl rounded-md" onClick={rollDice}>Roll Dice</button>
     </section>
-  )
+  );
 }

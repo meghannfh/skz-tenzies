@@ -1,5 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import App from "../../src/App";
+
+jest.mock("nanoid", () => {
+    return { nanoid: () => "1234" };
+  });
 
 describe("App", () => {
   it("renders App component", () => {
