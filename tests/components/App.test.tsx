@@ -17,7 +17,7 @@ describe("App", () => {
 
       // Assertions
       const diceButtons = screen.getAllByTestId(/die-.+/); // Select buttons by data-testid
-      diceButtons.forEach((button) => {
+      diceButtons.forEach((button, index) => {
         const dieValue = button.textContent ? Number(button.textContent) : 0; // Get the value of the die as an integer
         expect(dieValue).toBeGreaterThanOrEqual(0); // Assert that the die value is within the expected range
         expect(dieValue).toBeLessThanOrEqual(6); // Assuming a six-sided die

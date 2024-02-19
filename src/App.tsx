@@ -20,8 +20,6 @@ function App() {
   const [invalidClickError, setInvalidClickError] = useState<string>('');
   const [firstPickedValue, setFirstPickedValue] = useState<number>(0);
 
-  console.log(`firstPickedValue has value at: ${firstPickedValue}`)
-
   //Increment num of held die
   function incrementNumOfHeldDie() {
     setNumOfHeldDie((prevNumOfHeldDie: number) => prevNumOfHeldDie = prevNumOfHeldDie + 1)
@@ -61,12 +59,8 @@ function App() {
       setFirstPickedValue(0);
     } else {
       setDice((prevDice) =>
-      prevDice.map((die) => {
-        const newDie = die.held ? die : generateNewDie(); // Generate a new die if it's not held
-        console.log(`${newDie.value} is Number?: ${typeof newDie.value === "number"}`);
-        return newDie;
-      })
-    );
+        prevDice.map((die) => (die.held ? die : generateNewDie())) // Generate a new die if it's not held
+      );
     }
   }
 
