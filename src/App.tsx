@@ -116,6 +116,7 @@ function App() {
       }
       key={die.id}
       onClick={() => handleDieClick(die.id, die.value)}
+      data-testid={`die-${die.id}`} // Add data-testid attribute
     >
       {die.value}
     </button>
