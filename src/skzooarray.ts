@@ -1,50 +1,43 @@
+import puppym from "./assets/puppym.png";
+import foxyny from "./assets/foxyny.png";
+import bbokari from "./assets/bbokari.png";
+import hanquokka from "./assets/quokka.png";
+import jiniret from "./assets/jiniret.png";
+import dwaekki from "./assets/dwaekki.png";
+import leebit from "./assets/leebit.png";
+import wolfchan from "./assets/wolfchan.png";
+
 const skzooArr = [
     {
         value: "seungmin",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: puppym,
     },
     {
         value: "i.n",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: foxyny,
     },
     {
         value: "felix",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: bbokari,
     },
     {
         value: "han",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: hanquokka,
     },
     {
         value: "hyunjin",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: jiniret,
     },
     {
         value: "changbin",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: dwaekki,
     },
     {
         value: "lee know",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: leebit,
     },
     {
         value: "bang chan",
-        valueImg: "",
-        id: "",
-        held: false
+        valueImg: wolfchan,
     },
 ]

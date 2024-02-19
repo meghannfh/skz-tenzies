@@ -12,6 +12,7 @@
     "build:ts": "tsc && vite build"
   },
   "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
     "nanoid": "^5.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -22,7 +23,7 @@
     "@babel/preset-typescript": "^7.23.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "@types/jest": "^29.5.11",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
