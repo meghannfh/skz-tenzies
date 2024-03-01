@@ -7,37 +7,44 @@ import dwaekki from "./assets/dwaekki.png";
 import leebit from "./assets/leebit.png";
 import wolfchan from "./assets/wolfchan.png";
 
-const skzooArr = [
+export type Member = {
+    charName: string,
+    characterURL: string
+}
+
+const members: Member[] = [
     {
-        value: "seungmin",
-        valueImg: puppym,
+        charName: "foxyny",
+        characterURL: foxyny
     },
     {
-        value: "i.n",
-        valueImg: foxyny,
+        charName: "puppym",
+        characterURL: puppym
     },
     {
-        value: "felix",
-        valueImg: bbokari,
+        charName: "bbokari",
+        characterURL: bbokari
     },
     {
-        value: "han",
-        valueImg: hanquokka,
+        charName: "hanquokka",
+        characterURL: hanquokka
     },
     {
-        value: "hyunjin",
-        valueImg: jiniret,
+        charName: "jiniret",
+        characterURL: jiniret
     },
     {
-        value: "changbin",
-        valueImg: dwaekki,
+        charName: "dwaekki",
+        characterURL: dwaekki
     },
     {
-        value: "lee know",
-        valueImg: leebit,
+        charName: "leebit",
+        characterURL: leebit
     },
     {
-        value: "bang chan",
-        valueImg: wolfchan,
-    },
+        charName: "wolfchan",
+        characterURL: wolfchan
+    }
 ]
+
+export default members;
